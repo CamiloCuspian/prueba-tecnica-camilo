@@ -27,8 +27,7 @@ Una aplicación para gestionar productos desarrollada con React, Context API y T
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/product-manager.git
-   cd product-manager
+   git clone https://github.com/CamiloCuspian/prueba-tecnica-camilo.git
    ```
 
 2. Instala las dependencias:
@@ -78,4 +77,6 @@ src/
 
 ## Autor
 
-Tu Nombre
+Juan Camilo Cuspian Huertas
+
+Celular: 3165695773
