@@ -24,7 +24,7 @@ function App() {
                 <div className="relative">
                   <div className="absolute -top-10 -left-10 w-48 h-48 bg-amber-200 rounded-sm -z-10"></div>
                   <img
-                    src="https://via.placeholder.com/500x400"
+                    src="/producto.png"
                     alt="Ilustración de gestión de productos"
                     className="w-full h-auto object-cover rounded-sm shadow-md relative z-10"
                   />

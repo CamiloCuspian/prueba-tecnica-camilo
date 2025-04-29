@@ -13,7 +13,6 @@ const Header = () => {
                 <line x1="12" y1="22" x2="12" y2="12"></line>
               </svg>
             </div>
-            <h1 className="text-lg font-medium text-gray-800">ProductManager</h1>
           </div>
           
           {/* Navegación */}
