@@ -1,13 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  @apply bg-amber-50 text-gray-800;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1, h2, h3, h4, h5, h6 {
+  @apply font-serif;
+}
+
+/* Estilos adicionales inspirados en el diseño Squarespace */
+.hero-section {
+  @apply py-16 md:py-24;
+}
+
+.subtitle {
+  @apply text-lg text-gray-600 max-w-xl mx-auto;
+}
+
+/* Transiciones suaves */
+.transition-all {
+  @apply transition duration-300 ease-in-out;
+}
+
+/* Estilo para el foco en elementos interactivos */
+button:focus, input:focus, select:focus, textarea:focus {
+  @apply outline-none ring-2 ring-amber-500 ring-opacity-50;
+}
+
+/* Estilo para el contenedor principal */
+.container {
+  @apply px-4 mx-auto max-w-7xl;
 }

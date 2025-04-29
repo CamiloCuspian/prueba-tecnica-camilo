@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# ProductManager - Aplicación de Gestión de Productos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Una aplicación para gestionar productos desarrollada con React, Context API y TailwindCSS.
 
-## Available Scripts
+## Características
 
-In the project directory, you can run:
+- Crear nuevos productos
+- Visualizar lista de productos
+- Eliminar productos
+- Ordenar productos por diferentes criterios
+- Filtrar productos por nombre
+- Persistencia de datos con localStorage
 
-### `npm start`
+## Tecnologías utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React para la interfaz de usuario
+- Context API para el manejo de estado
+- TailwindCSS para los estilos
+- LocalStorage para la persistencia de datos
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Requisitos previos
 
-### `npm test`
+- Node.js (v14.0.0 o superior)
+- npm (v6.0.0 o superior)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Instalación
 
-### `npm run build`
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/product-manager.git
+   cd product-manager
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Inicia la aplicación en modo desarrollo:
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Abre [http://localhost:3000](http://localhost:3000) para ver la aplicación en tu navegador.
 
-### `npm run eject`
+## Estructura del proyecto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+src/
+├── components/
+│   ├── Layout/         # Componentes de estructura de la página
+│   ├── Products/       # Componentes relacionados con productos
+│   └── UI/             # Componentes de interfaz reutilizables
+├── context/            # Context API para manejo de estado global
+├── hooks/              # Custom hooks
+├── utils/              # Funciones utilitarias
+├── App.jsx             # Componente principal
+└── index.js            # Punto de entrada
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Decisiones técnicas
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Context API**: Elegí Context API sobre Redux porque la complejidad del estado no requería una solución más robusta y permite un código más limpio y mantenible para esta aplicación.
+  
+- **TailwindCSS**: Utilicé TailwindCSS por su flexibilidad, velocidad de desarrollo y capacidad para crear un diseño responsive sin necesidad de escribir CSS personalizado.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Estructura por componentes**: Organicé los componentes en carpetas por funcionalidad para facilitar el mantenimiento y escalabilidad del proyecto.
 
-## Learn More
+- **LocalStorage**: Para cumplir con el requisito de persistencia sin backend, implementé el almacenamiento local que permite que los datos persistan entre recargas de página.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Mejoras futuras
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Implementar edición de productos
+- Añadir categorías a los productos
+- Implementar un tema oscuro
+- Añadir tests unitarios y de integración
+- Desplegar la aplicación en Vercel o Netlify
 
-### Code Splitting
+## Autor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Tu Nombre
